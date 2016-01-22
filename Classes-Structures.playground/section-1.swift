@@ -16,8 +16,6 @@ class Vehicle {
     
 }
 
-
-
 class Bycicle: Vehicle {
     
     override init() {
@@ -28,8 +26,20 @@ class Bycicle: Vehicle {
     
 }
 
+class Car: Vehicle {
+    
+    override init() {
+        super.init()
+        wheelNumber = 4
+        passengerNumber = 4
+    }
+    
+}
+
 let abycicle = Bycicle()
+let car1 = Car()
 abycicle.description()
+car1.description()
 
 
 
